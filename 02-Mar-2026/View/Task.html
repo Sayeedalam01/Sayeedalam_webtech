@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <script src="../JS/script.js"></script>
+  </head>
+  <body>
+
+    <h2>Login Form</h2>
+
+    <table>
+      <tr>
+        <td>Student Email <span style="color: red">*</span></td>
+        <td>
+          <input
+            type="text"
+            placeholder="Enter your email"
+            id="email"
+          />
+        </td>
+        <td>
+          <p id="emailErr" style="color: red"></p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Password</td>
+        <td>
+          <input
+            type="text"
+            placeholder="Enter your password"
+            id="password"
+          />
+        </td>
+        <td>
+          <p id="passErr" style="color: red"></p>
+        </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <button onclick="return collectFormData();">
+            Submit
+          </button>
+        </td>
+      </tr>
+    </table>
+    <h3 id="errCount" style="color: red"></h3>
+  </body>
+</html>
